@@ -582,12 +582,12 @@ template {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  position: relative;
 }
 
 .hotel-slider__item {
   width: 100%;
   height: 100%;
-  position: relative;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -619,7 +619,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px;
-  background-color: red;
+  background-color: transparent;
 }
 
 .hotel-slider__button--next {
