@@ -44,4 +44,26 @@ $(document).ready(function() {
         modalOverlay.removeClass('modal__overlay--visible');
         modalDialog.removeClass('modal__dialog--visible');
     }
-});
+    // Обработка форм
+    $(".form").each(function() {
+        $(this).validate({
+            errorClass: "invalid",
+            messages: {
+                name: {
+                    required: "Укажите Ваше имя",
+                    minlength: "Имя не должно быть короче 2 букв"
+                },
+                email: {
+                    required: "Нам нужен Ваш контактный адрес",
+                    email: "Должен быть формата name@domain.com"
+                },
+                phone: {
+                    required: "Телефон обязателен"
+                },
+            },
+        });
+        $(".form").ready(function() {
+            $(phone).mask("+7 (999) 999-9999")
+        })
+    });
+})
