@@ -199,8 +199,8 @@
                 subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form action="#" class="subscribe newsletter__subscribe">
-                <input type="search" class="subscribe__input" placeholder="Your email address" />
+            <form action="#" class="subscribe newsletter__subscribe form">
+                <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
                 <button class="subscribe__button"> Send </button>
             </form>
         </div>
@@ -373,12 +373,21 @@
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
-                                <img class="footer__icon" src="img/phone-call.svg" alt="icon:phone call"> </div>
-                            Tel (business hours) : 269 1500 <br/> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br/> Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                                <img class="footer__icon" src="img/phone-call.svg" alt="icon:phone call">
+                            </div>
+                            <span> Tel (business hours) : 
+                                <a class="footer__item-link" href="tel: 269 1500">269 1500</a> <br> 
+                                Tel (hotline) Monday - Saturday: 
+                                <a class="footer__item-link" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm) <br>
+                                Tel (hotline) Sunday: 
+                                <a class="footer__item-link" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
+                            </span>
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
-                                <img class="footer__icon" src="img/email.svg" alt="icon:email"></div>cherly.lawson@example.com
+                                <img class="footer__icon" src="img/email.svg" alt="icon:email">
+                            </div>
+                            <a class="footer__item-link" href="mailto:kirill0007@mail.ru&body=привет! Оставь нам отзыв?subject=Отзыв">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
@@ -449,6 +458,9 @@
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+    <a href="#" class="to-top">
+        <img src="img/to-top.png" alt="to-top" id="top">
+    </a>
 </body>
 
 </html>
