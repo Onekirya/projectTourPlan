@@ -199,8 +199,8 @@
                 subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form action="#" class="subscribe newsletter__subscribe form">
-                <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
+            <form action="#" class="subscribe newsletter__subscribe">
+                <input type="email" class="subscribe__input" placeholder="Your email address" name="emailnewsletter" required>
                 <button class="subscribe__button"> Send </button>
             </form>
         </div>
@@ -376,7 +376,7 @@
                                 <img class="footer__icon" src="img/phone-call.svg" alt="icon:phone call">
                             </div>
                             <span> Tel (business hours) : 
-                                <a class="footer__item-link" href="tel: 269 1500">269 1500</a> <br> 
+                                <a class="footer__item-link" href="tel:2691500">269 1500</a> <br> 
                                 Tel (hotline) Monday - Saturday: 
                                 <a class="footer__item-link" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm) <br>
                                 Tel (hotline) Sunday: 
@@ -387,7 +387,7 @@
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="img/email.svg" alt="icon:email">
                             </div>
-                            <a class="footer__item-link" href="mailto:kirill0007@mail.ru&body=привет! Оставь нам отзыв?subject=Отзыв">cherly.lawson@example.com</a>
+                            <a class="footer__item-link" href="mailto:kirill0007@mail.ru&body=привет!_Оставь_нам_отзыв?subject=Отзыв">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
@@ -399,7 +399,7 @@
                             <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
                         </div>
                         <div class="footer__input-group">
-                            <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+                            <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required minlength="10" maxlength="10">
                         </div>
                         <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
@@ -420,9 +420,9 @@
                 <img src="img/close.svg" alt="icon: close">
             </a>
             <h3 class="modal__title modal__title--mb-3">Booking</h3>
-            <form action="send.php" method="post" class="form modal__form form">
+            <form action="send.php" method="post" class="form modal__form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" id="phone" required minlength="17" maxlength="17">
                 <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
                 <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
                 <button class="button modal__button" type="submit">Send</button>
@@ -440,9 +440,9 @@
                 <img src="img/close.svg" alt="icon: close">
             </a>
             <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
-            <form action="send.php" method="post" class="form modal__form form">
+            <form action="send.php" method="post" class="form modal__form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+                <input type="tel" class="input modal__input modal__input-phone" placeholder="Phone Number*" name="phone" id="modal__input-phone" required minlength="17" maxlength="17">
                 <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
                 <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
                 <button class="button modal__button" type="submit">Send</button>

@@ -51,20 +51,32 @@ $(document).ready(function() {
             messages: {
                 name: {
                     required: "Please specify your name",
-                    minlength: "Имя не должно быть короче 2 букв"
+                    minlength: "Name must not be shorter than 2 letters"
                 },
                 email: {
                     required: "We need your email address to contact you",
                     email: "Your email address must be in the format of name@domain.com"
                 },
                 phone: {
-                    required: "Please specify your phone number"
+                    required: "Please specify your phone number",
+                    minlength: "Number must be in the format +7 (999) 999-9999"
+                },
+            },
+        });
+        $(".subscribe").validate({
+            messages: {
+                emailnewsletter: {
+                    required: "We need your email address to contact you",
+                    email: "Email must be in the format of name@domain.com"
                 },
             },
         });
         $(".form").ready(function() {
-            $(phone).mask("+7 (999) 999-9999")
-        })
+            $("#phone").mask("+7 (999) 999-9999");
+        });
+        $(".form").ready(function() {
+            $("#modal__input-phone").mask("+7 (999) 999-9999");
+        });
     });
     AOS.init();
-})
+});
