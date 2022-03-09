@@ -77,6 +77,9 @@ $(document).ready(function() {
         $(".form").ready(function() {
             $("#modal__input-phone").mask("+7 (999) 999-9999");
         });
+        $(".form").ready(function() {
+            $("#footer__phone").mask("+7 (999) 999-9999");
+        });
     });
     AOS.init();
 });

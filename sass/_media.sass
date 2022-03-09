@@ -66,10 +66,16 @@
   .booking
     width: 340px
     height: 213px
+    &__button
+      font-size: 12px  
     &__number
       cursor: default
   .map
     width: 340px
+  .newsletter
+    margin-top: -14px
+    &-wrapper
+      margin-top: -25px
   .swiper
     &-slide
       &__image
@@ -79,11 +85,15 @@
       cursor: default
   .reviews
     &-slider
+      margin-top: 45px
+    &__title
+      font-size: 30px
       &__item
        max-width: 580px
       &__button
         cursor: default
   .activities
+    padding-bottom: 56px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -94,6 +104,8 @@
     &__button
       cursor: default
   .footer
+    padding: 73px 33px 0 33px
+    height: auto
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
@@ -103,6 +115,8 @@
     &__logo
       grid-row: 1/2
       grid-column: span 2
+      width: 104px
+      height: 120px
     &__social
       &-network
         grid-row: 1/2
@@ -132,6 +146,8 @@
     width: 92%
   body
     padding-top: 78px
+  .stars
+    width: auto
   .navbar
     &--mobile
       &_fixed
@@ -252,8 +268,16 @@
 @media (max-width: 576px)
   .logo
     width: 99px
+  .navbar
+    &-top
+      padding: 24px 7px 28px 7px
+  .breadcrumb
+    &-list
+      padding: 12px 10px
   .hotel
     &__slider
+      width: 279px
+      height: 179px
       margin-bottom: 20px
     &-slider
       height: 250px
